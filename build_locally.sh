@@ -27,7 +27,8 @@ gem install jekyll
 gem install bundler -v 1.17.3
 bundle install
 
-# Test website using same script as Travis
+# Optionally test website using same script as Travis. 
+# When you are developing locally, you may or may not want to run the full set of tests that Travis does
 if have_travis "$@"; then
   ./.travis.sh
 fi
